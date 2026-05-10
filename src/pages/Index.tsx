@@ -21,7 +21,7 @@ const gdpData = [
 
 const inflationData = [
   { year: "1991", rate: 161 },
-  { year: "1992", rate: 2508 },
+  { year: "1992", rate: 2608 },
   { year: "1993", rate: 840 },
   { year: "1994", rate: 215 },
   { year: "1995", rate: 131 },
@@ -41,7 +41,7 @@ const unemploymentData = [
   { year: "1995", rate: 11.4 },
   { year: "1996", rate: 12.5 },
   { year: "1997", rate: 12.8 },
-  { year: "1998", rate: 14.6 },
+  { year: "1998", rate: 13.3 },
   { year: "1999", rate: 12.9 },
   { year: "2000", rate: 10.6 },
 ];
@@ -223,8 +223,8 @@ export default function Index() {
             <div className="flex flex-wrap gap-5 mb-16">
               {[
                 { label: "Падение ВВП", value: "−43%", sub: "1990–1998 гг." },
-                { label: "Инфляция", value: "2508%", sub: "1992 г." },
-                { label: "Безработица", value: "14.6%", sub: "пик 1998 г." },
+                { label: "Инфляция", value: "2608%", sub: "1992 г." },
+                { label: "Безработица", value: "13.3%", sub: "пик 1998 г." },
                 { label: "Приватизировано", value: "~140 000", sub: "предприятий" },
               ].map((stat, i) => (
                 <div key={i} className="animate-fade-in-up"
@@ -457,16 +457,16 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 gap-x-16 mt-12">
             {[
-              { authors: "Sachs, J.D.", year: "1993", title: "Poland's Jump to the Market Economy", pub: "MIT Press, Cambridge" },
               { authors: "Гайдар, Е.Т.", year: "1996", title: "Дни поражений и побед", pub: "Вагриус, Москва" },
-              { authors: "Stiglitz, J.E.", year: "2002", title: "Globalization and Its Discontents", pub: "W.W. Norton & Company" },
+              { authors: "Гайдар, Е.Т.", year: "2009", title: "Гибель империи. Уроки для современной России", pub: "РОССПЭН, Москва" },
+              { authors: "Ясин, Е.Г.", year: "2003", title: "Российская экономика: истоки и панорама рыночных реформ", pub: "ГУ ВШЭ, Москва" },
               { authors: "Аслунд, А.", year: "1995", title: "Россия: рождение рыночной экономики", pub: "Республика, Москва" },
-              { authors: "Shleifer, A., Treisman, D.", year: "2000", title: "Without a Map: Political Tactics and Economic Reform in Russia", pub: "MIT Press" },
-              { authors: "Bunce, V.", year: "1999", title: "Subversive Institutions", pub: "Cambridge University Press" },
-              { authors: "Ellman, M.", year: "2000", title: "The Russian Economy Under El'tsin", pub: "Europe-Asia Studies, vol. 52" },
-              { authors: "Yasin, E.", year: "2003", title: "Российская экономика: истоки и панорама рыночных реформ", pub: "ГУ ВШЭ, Москва" },
-              { authors: "World Bank", year: "2002", title: "Transition: The First Ten Years", pub: "World Bank Publications" },
-              { authors: "Российский статистический ежегодник", year: "1995–2001", title: "Социально-экономические показатели РФ", pub: "Росстат, Москва" },
+              { authors: "Илларионов, А.Н.", year: "1996", title: "Попытки проведения политики финансовой стабилизации в СССР и России", pub: "Вопросы экономики, №7" },
+              { authors: "Авен, П.О., Кох, А.Р.", year: "2013", title: "Революция Гайдара: история реформ 90-х из первых рук", pub: "Альпина Паблишер, Москва" },
+              { authors: "Федоров, Б.Г.", year: "1999", title: "10 безумных лет: почему в России не состоялись реформы", pub: "Совершенно секретно, Москва" },
+              { authors: "Росстат", year: "1995–2001", title: "Российский статистический ежегодник", pub: "Росстат, Москва" },
+              { authors: "Центральный банк Российской Федерации", year: "1993–2001", title: "Годовой отчёт Банка России", pub: "ЦБ РФ, Москва" },
+              { authors: "Мау, В.А.", year: "2010", title: "Драма 2008 года: от экономического чуда к экономическому кризису", pub: "Вопросы экономики, №2" },
             ].map((ref, i) => (
               <div key={i} className="flex gap-4 py-4" style={{ borderBottom: "1px solid #E8E0CC" }}>
                 <span className="font-mono text-xs mt-1" style={{ color: "#C8B89A", minWidth: 20 }}>{i + 1}.</span>
